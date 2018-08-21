@@ -1,0 +1,16 @@
+#midle
+alias h="htop"
+alias cp="cp -uR"
+alias rm="rm -R"
+alias s="sudo su"
+alias e="exit"
+alias re="reboot"
+alias off="shutdown -PC 0"
+#git
+alias gg="git add --a;git commit -m \"standart_commit\";git push"
+alias gs="git status"
+alias ali=". ~/.alias"
+#ssh
+alias ss="ssh -i ~/.ssh/.kazqop"
+#apache
+alias ar="service apache2 restart"
