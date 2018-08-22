@@ -101,8 +101,8 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
-if [ -f ~/.aliases ]; then
-   . ~/.aliases
+if [ -f ~/.bashrc ]; then
+   . ~/.bashrc
 fi
 
 # enable programmable completion features (you don't need to enable
@@ -115,15 +115,20 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-
-#midle
+#start
+alias startcli="apt install htop tree"
+alias startgui="apt install snap qbittorrent;snap install --clissic chromium vscode"
+#programs
 alias h="htop"
+alias t="tree"
+#midle
+alias up="apt update && apt upgrade"
 alias cp="cp -uR"
 alias rm="rm -R"
 alias s="sudo su"
 alias e="exit"
 alias re="reboot"
-alias off="shutdown -PC 0"
+alias off="shutdown -P 0"
 alias ali=". ~/.bashrc"
 #git
 alias gg="git add --a;git commit -m \"standart_commit\";git push"
